@@ -14,7 +14,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
 const CreateListing = () => {
-  const [geolocationEnabled, setGeolocationEnabled] = useState(false)
+  const [geolocationEnabled] = useState(false)
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     type: 'rent',

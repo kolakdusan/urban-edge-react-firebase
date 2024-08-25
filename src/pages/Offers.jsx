@@ -19,7 +19,6 @@ const Offers = () => {
   const [loading, setLoading] = useState(true)
   const [lastFetchedListing, setLastFetchedListing] = useState(null)
 
-  const params = useParams()
   useEffect(() => {
     const fetchListings = async () => {
       try {

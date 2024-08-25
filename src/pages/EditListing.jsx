@@ -14,7 +14,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { doc, updateDoc, getDoc, serverTimestamp } from 'firebase/firestore'
 
 const EditListing = () => {
-  const [geolocationEnabled, setGeolocationEnabled] = useState(false)
+  const [geolocationEnabled] = useState(false)
   const [loading, setLoading] = useState(false)
   const [listing, setListing] = useState(false)
   const [formData, setFormData] = useState({
